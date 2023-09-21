@@ -16,7 +16,7 @@ public class UserDaoJDBCImpl implements UserDao {
     private static final String QUERY_DATA = "SELECT * FROM users113";
     private static final String CLEAN_TABLE = "DELETE FROM users113";
 
-    Connection connection = Util.getConnection();
+    private Connection connection = Util.getConnection();
 
     public UserDaoJDBCImpl() {
     }
